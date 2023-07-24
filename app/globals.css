@@ -18,14 +18,79 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #EEEEEF;
+}
+
+header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+header .logo img {
+  border-radius: 10px;
 }
 
 .content {
-  margin: 2rem;
+  margin: 3rem;
+}
+
+.content-info {
+  padding: 2rem;
+  background-color: #F8FAFB;
+}
+
+.content-info .user-info {
+}
+
+/* Estilo para a área de capa do perfil */
+.profile-cover {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Altura da área de capa */
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Gradiente de duas cores para a área de capa */
+.cover-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background: linear-gradient(90deg, rgba(249,226,172,1) 0%, rgba(247,216,189,1) 35%, rgba(245,208,203,1) 100%);
+}
+
+/* Imagem de capa */
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Para garantir que a imagem preencha todo o espaço disponível */
+}
+
+/* Estilo para a área de informações do perfil */
+.profile-info {
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: -40px; /* Para sobrepor parte da área de capa */
+}
+
+/* Imagem de perfil redonda */
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%; /* Transforma a imagem em um círculo */
+  border: 4px solid #ffffff; /* Adiciona uma borda branca ao redor da imagem */
+  margin-right: 20px;
+}
+
+/* Estilo para as informações do usuário */
+.user-info {
+  /* Estilo para as informações do usuário */
 }
